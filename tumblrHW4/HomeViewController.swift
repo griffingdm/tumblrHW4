@@ -22,8 +22,6 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func tapLogIn(_ sender: AnyObject) {
-        dismiss(animated: true) { 
-        }
     }
 
     /*
