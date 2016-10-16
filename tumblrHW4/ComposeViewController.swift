@@ -13,9 +13,9 @@ class ComposeViewController: UIViewController {
     
     var ogButtonPoints: [CGPoint]! = []
     let animationDuration: Double = 0.5
-    let springDamp: CGFloat = 0.7
-    let lowestSpringVel: UInt32 = 5
-    let velRange: UInt32 = 5
+    let springDamp: CGFloat = 0.95
+    let lowestSpringVel: UInt32 = 10
+    let velRange: UInt32 = 10
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +48,6 @@ class ComposeViewController: UIViewController {
             default:
                 newPoint = CGPoint(x: newPoint.x, y: button.frame.origin.y - view.frame.height)
             }
-            
             
             UIView.animate(withDuration: self.animationDuration,
                            delay: 0,
