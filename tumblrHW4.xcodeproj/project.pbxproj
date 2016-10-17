@@ -20,10 +20,10 @@
 		6D7F09701DB3D5E30088E08D /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7F096F1DB3D5E30088E08D /* ComposeViewController.swift */; };
 		6D7F09721DB3D61B0088E08D /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7F09711DB3D61B0088E08D /* AccountViewController.swift */; };
 		6D7F09741DB3D6840088E08D /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7F09731DB3D6840088E08D /* TrendingViewController.swift */; };
-		6D7F09791DB3F4DF0088E08D /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7F09771DB3F4DF0088E08D /* BaseTransition.swift */; };
-		6D7F097A1DB3F4DF0088E08D /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7F09781DB3F4DF0088E08D /* FadeTransition.swift */; };
 		6D7F097C1DB3FC9B0088E08D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7F097B1DB3FC9B0088E08D /* LoginViewController.swift */; };
 		6D7F097E1DB3FD810088E08D /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7F097D1DB3FD810088E08D /* common.swift */; };
+		6D8BC42F1DB46A6000463D4D /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BC42D1DB46A6000463D4D /* BaseTransition.swift */; };
+		6D8BC4301DB46A6000463D4D /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BC42E1DB46A6000463D4D /* FadeTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,10 +63,10 @@
 		6D7F096F1DB3D5E30088E08D /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		6D7F09711DB3D61B0088E08D /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		6D7F09731DB3D6840088E08D /* TrendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
-		6D7F09771DB3F4DF0088E08D /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseTransition.swift; path = "Transition Files/BaseTransition.swift"; sourceTree = "<group>"; };
-		6D7F09781DB3F4DF0088E08D /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FadeTransition.swift; path = "Transition Files/FadeTransition.swift"; sourceTree = "<group>"; };
 		6D7F097B1DB3FC9B0088E08D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6D7F097D1DB3FD810088E08D /* common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
+		6D8BC42D1DB46A6000463D4D /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
+		6D8BC42E1DB46A6000463D4D /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,9 +120,9 @@
 				6D7F093A1DB3CD510088E08D /* AppDelegate.swift */,
 				6D7F093C1DB3CD510088E08D /* ViewController.swift */,
 				6D7F093E1DB3CD510088E08D /* Main.storyboard */,
-				6D7F09771DB3F4DF0088E08D /* BaseTransition.swift */,
-				6D7F09781DB3F4DF0088E08D /* FadeTransition.swift */,
 				6D7F097D1DB3FD810088E08D /* common.swift */,
+				6D8BC42D1DB46A6000463D4D /* BaseTransition.swift */,
+				6D8BC42E1DB46A6000463D4D /* FadeTransition.swift */,
 				6D7F096A1DB3D0300088E08D /* Controllers */,
 				6D7F09411DB3CD510088E08D /* Assets.xcassets */,
 				6D7F09431DB3CD510088E08D /* LaunchScreen.storyboard */,
@@ -304,13 +304,13 @@
 				6D7F09741DB3D6840088E08D /* TrendingViewController.swift in Sources */,
 				6D7F09691DB3D0290088E08D /* InitialTabBarViewController.swift in Sources */,
 				6D7F09721DB3D61B0088E08D /* AccountViewController.swift in Sources */,
-				6D7F09791DB3F4DF0088E08D /* BaseTransition.swift in Sources */,
 				6D7F093D1DB3CD510088E08D /* ViewController.swift in Sources */,
-				6D7F097A1DB3F4DF0088E08D /* FadeTransition.swift in Sources */,
 				6D7F09701DB3D5E30088E08D /* ComposeViewController.swift in Sources */,
 				6D7F097E1DB3FD810088E08D /* common.swift in Sources */,
 				6D7F093B1DB3CD510088E08D /* AppDelegate.swift in Sources */,
+				6D8BC42F1DB46A6000463D4D /* BaseTransition.swift in Sources */,
 				6D7F096C1DB3D0EF0088E08D /* HomeViewController.swift in Sources */,
+				6D8BC4301DB46A6000463D4D /* FadeTransition.swift in Sources */,
 				6D7F097C1DB3FC9B0088E08D /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -560,6 +560,7 @@
 				6D7F09611DB3CD510088E08D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D7F09621DB3CD510088E08D /* Build configuration list for PBXNativeTarget "tumblrHW4Tests" */ = {
 			isa = XCConfigurationList;
@@ -568,6 +569,7 @@
 				6D7F09641DB3CD510088E08D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D7F09651DB3CD510088E08D /* Build configuration list for PBXNativeTarget "tumblrHW4UITests" */ = {
 			isa = XCConfigurationList;
@@ -576,6 +578,7 @@
 				6D7F09671DB3CD510088E08D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

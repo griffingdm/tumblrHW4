@@ -102,7 +102,7 @@ class InitialTabBarViewController: UIViewController {
         destinationViewController.transitioningDelegate = fadeTransition
         
         // Adjust the transition duration. (seconds)
-        fadeTransition.duration = 1.0
+        fadeTransition.duration = 0.25
     }
  
 

@@ -10,7 +10,7 @@ import UIKit
 
 class BaseTransition: NSObject, UIViewControllerTransitioningDelegate, UIViewControllerAnimatedTransitioning {
     
-    var duration: TimeInterval = TimeInterval(exactly: 0.4)!
+    var duration: TimeInterval = 0.4
     var isPresenting: Bool = true
     var isInteractive: Bool = false
     var transitionContext: UIViewControllerContextTransitioning!
@@ -22,13 +22,13 @@ class BaseTransition: NSObject, UIViewControllerTransitioningDelegate, UIViewCon
             interactiveTransition.update(percentComplete)
         }
     }
-
-    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         isPresenting = true
         return self
     }
     
-    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         isPresenting = false
         return self
     }
@@ -78,8 +78,7 @@ class BaseTransition: NSObject, UIViewControllerTransitioningDelegate, UIViewCon
                 let fromViewController = transitionContext?.viewController(forKey: UITransitionContextViewControllerKey.from)!
                 fromViewController?.view.removeFromSuperview()
             }
-            
-            transitionContext?.completeTransition(true)
+            transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
         }
     }
     
