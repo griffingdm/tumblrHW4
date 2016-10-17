@@ -49,20 +49,15 @@ class ComposeViewController: UIViewController {
                 newPoint = CGPoint(x: newPoint.x, y: button.frame.origin.y - view.frame.height)
             }
             
-            UIView.animate(withDuration: self.animationDuration,
-                           delay: 0,
-                           usingSpringWithDamping: springDamp,
-                           initialSpringVelocity: velocity,
-                           options: [],
-                           animations: {
-                            button.frame.origin = newPoint
-                },
-                           completion: { (Bool) in
-                            if hide {
-                                self.dismiss(animated: true, completion: {
-                                })
-                                button.isHidden = true
-                            }
+            UIView.animate(withDuration: self.animationDuration, delay: 0, usingSpringWithDamping: springDamp, initialSpringVelocity: velocity, options: [],animations: {
+                //animation code
+                button.frame.origin = newPoint
+                }, completion: { (Bool) in
+                    //what to do after the animation
+                    if hide {
+                        self.dismiss(animated: true, completion: {})
+                        button.isHidden = true
+                    }
             })
         }
     }
